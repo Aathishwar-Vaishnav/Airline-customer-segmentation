@@ -100,28 +100,28 @@ cluster statistics
 
 -> Cluster Characteristics :
 
-Cluster 0 (The Most Loyal Customer)
+# Cluster 0 (The Most Loyal Customer)
 
 Loyalty: The second-oldest members (mean L = 1226.97).
 Recency: The shortest recency (mean R = 437.81), meaning these customers have flown recently.
 Frequency: Highest flight frequency (mean F = 4.64).
 Distance: Highest accumulated flight distance (mean M = 7281.61).
 
-Cluster 1 (New Customer but Fly Often)
+# Cluster 1 (New Customer but Fly Often)
 
 Loyalty: The newest members (mean L = 2442.08).
 Recency: 2nd most recent (mean R = 110.17), indicating flights occurred not too long ago.
 Frequency: Medium flight count (mean F = 9.06).
 Distance: Medium distance flown (mean M = 12809.19).
 
-Cluster 2 (Potential Churned Customer)
+# Cluster 2 (Potential Churned Customer)
 
 Loyalty: The second-newest members (mean L = 872.36).
 Recency: Haven't flown recently (mean R = 99.89), suggesting flights occurred over a year ago.
 Frequency: Lowest flight frequency (mean F = 8.71).
 Distance: Second lowest accumulated miles (mean M = 12477.69).
 
-Cluster 3 (Casual Customer)
+# Cluster 3 (Casual Customer)
 
 Loyalty: The oldest members (mean L = 1658.17).
 Recency: Longest recency (mean R = 45.92), with flights spread out over time.
@@ -129,32 +129,32 @@ Frequency: Highest flight frequency (mean F = 27.82).
 Distance: The highest accumulated flight distance (mean M = 39383.89).
 
 # Business Recommendation
-1. Tailor Loyalty Programs:
+# 1. Tailor Loyalty Programs:
 Gold: Assign Cluster 0 as Gold members. They exhibit balanced engagement and frequent moderate-distance travel. Offer personalized rewards for consistent usage, such as additional discounts or exclusive benefits for frequent travelers.
 
 Silver: Assign Clusters 1 and 3 as Silver members. Cluster 1, with high engagement and frequent travel, should receive benefits that emphasize their high activity, such as priority boarding or premium services. Cluster 3, despite being less frequent, should be valued for their long-term loyalty with benefits like anniversary rewards or special offers for long-distance travel.
 
 Bronze: Assign Cluster 2 as Bronze members. Provide targeted incentives to increase their engagement, such as introductory offers or limited-time discounts, to encourage more frequent travel and longer-term membership.
 
-2. Prevent Churn for Cluster 2:
+# 2. Prevent Churn for Cluster 2:
 Engagement Campaigns: Since Cluster 2 has long flight recency and lower activity, implement campaigns to re-engage them. Use personalized push notifications and special promotions to encourage bookings and prevent them from becoming inactive.
 
 Special Offers: Offer attractive discounts or deals specifically for Cluster 2 members when they make a booking, to incentivize them to return to active travel.
 
-3. Increase Engagement for Cluster 2:
+# 3. Increase Engagement for Cluster 2:
 Incentives for Activity: Introduce rewards for frequent bookings to motivate Cluster 2 members to travel more often. Consider loyalty points or tiered rewards that increase with the number of flights.
 
 Personalized Communication: Use data insights to send tailored offers and promotions that match their past behavior and preferences. Engage them with targeted email campaigns and special promotions.
 
-4. Enhance Benefits for Cluster 1 and 3:
+# 4. Enhance Benefits for Cluster 1 and 3:
 Cluster 1: With high flight count and engagement, offer perks such as additional miles, exclusive access to lounges, or priority services to reinforce their loyalty and encourage continued engagement.
 
 Cluster 3: Focus on long-term benefits and exclusive rewards that acknowledge their senior status, such as special anniversary offers or enhanced benefits for their travel frequency and distance.
 
-5. Optimize Discount Strategies:
+# 5. Optimize Discount Strategies:
 Across All Clusters: Although discount usage is consistent, ensure that the discount strategies are optimized for each cluster's characteristics. Tailor discounts to align with the clusters’ flight recency, count, and distance to maximize their effectiveness.
 
-6. Monitor and Adjust:
+# 6. Monitor and Adjust:
 Regular Analysis: Continuously monitor the performance of loyalty programs and engagement strategies. Adjust based on changes in customer behavior and cluster dynamics to ensure ongoing relevance and effectiveness.
 
 # Contact:
