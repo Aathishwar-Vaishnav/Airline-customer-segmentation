@@ -1,11 +1,11 @@
 # Airline-customer-segmentation
 K-Means Clustering: Airline-Customer-Value-Analysis
 
-Introduction
+# Introduction
 This project, Airline Customer Value Analysis, aims to identify distinct customer groups based on key behavioral factors such as flight frequency, travel spending, loyalty status, and other relevant features. By leveraging K-Means clustering, airlines can better understand the value each customer segment brings and tailor their marketing and operational strategies accordingly.
 
-Data
-Basic customer information:
+# Data
+# Basic customer information:
 
 MEMBER_NO: Membership card number (ID)
 FFP_DATE: Membership join date
@@ -17,7 +17,7 @@ WORK_PROVINCE: The province where the customer works
 WORK_COUNTRY: The country where the customer works
 AGE: Age
 
-Flight information:
+# Flight information:
 
 LOAD_TIME: The end time of the observation window (observation window: time period of observation)
 FLIGHT_COUNT: Number of flights in the observation window
@@ -30,14 +30,14 @@ AVG_INTERVAL: Average flight time interval
 MAX_INTERVAL: Maximum flight interval
 avg_discount: Average discount rate
 
-Integral information
+# Integral information
 
 BP_SUM: Total basic integral
 EXCHANGE_COUNT: Number of points exchanged
 Points_Sum: Total cumulative points
 Point_NotFlight: points not used by the customer
 
-Domain : Airline Industry
+# Domain : Airline Industry
 Technology and Skills Takeaway
 -> Basic Python
 -> Data Visualization
@@ -45,17 +45,17 @@ Technology and Skills Takeaway
 -> EDA
 -> Clustering
 
-Packages and Libraries
+# Packages and Libraries
 !pip install numpy
 !pip install pandas
 !pip install scikit-learn
 !pip install matplotlib
 !pip install seaborn
 
-Overview
+# Overview
 The goal of this project is to divide airline customers into segments and to make business recommendation from the clustering model. The model itself will be built based on LRFMC anaylis that have been used in aviation industry to analyze customer value.
 
-Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 A. Descriptive analysis
 -> The dataset consists of 5 categorical columns and 18 numerical columns.
 -> Missing values found in feature: Age, Revenue (SUM_YR_1, SUM_YR_2), WORK_CITY, WORK_PROVINCE, WORK_COUNTRY.
@@ -67,7 +67,7 @@ B. Univariate Analysis
 -> Discount feature has some strange values, there are some rows with discount above 100%.
 -> Age has strange maximum values, there is someone 110 years old.
 
-Data Pre-Processing
+# Data Pre-Processing
 A. Missing values handling:
 -> age columns are filled by median value.
 -> Revenue (SUM_YR_1 & SUM_YR_2) are filled by 0.
@@ -81,14 +81,20 @@ C. Feature Engineering Select 5 feature from dataset that will be used for LRFMC
 -> M : Miles accumulated during member observation time. => SEG_KM_SUM
 -> C : The average value of the discount factor used by the member during the observation period. => avg_discount
 
-Modelling
+# Modelling
 -> Clustering model algorthm: K-Means Clustering
 -> Number of clusters after practicing Elbow Method: 4.
 -> Visualize the cluster model with PCA
+
+![image](https://github.com/user-attachments/assets/7b15b3e3-c489-4fae-a34d-3a88ca808737)
+
 elbow cluster
 
-Analysis
+# Analysis
 -> Cluster summary statistic:
+
+![image](https://github.com/user-attachments/assets/b777263f-d33d-4ebc-ae2c-72b17dc1490b)
+
 
 cluster statistics
 
@@ -122,7 +128,7 @@ Recency: Longest recency (mean R = 45.92), with flights spread out over time.
 Frequency: Highest flight frequency (mean F = 27.82).
 Distance: The highest accumulated flight distance (mean M = 39383.89).
 
-Business Recommendation
+# Business Recommendation
 1. Tailor Loyalty Programs:
 Gold: Assign Cluster 0 as Gold members. They exhibit balanced engagement and frequent moderate-distance travel. Offer personalized rewards for consistent usage, such as additional discounts or exclusive benefits for frequent travelers.
 
@@ -151,6 +157,6 @@ Across All Clusters: Although discount usage is consistent, ensure that the disc
 6. Monitor and Adjust:
 Regular Analysis: Continuously monitor the performance of loyalty programs and engagement strategies. Adjust based on changes in customer behavior and cluster dynamics to ensure ongoing relevance and effectiveness.
 
-Contact:
+# Contact:
 Linkedin: https://www.linkedin.com/in/aathishwar-vaishnav/ 
 Email: aathi54208@gmail.com
